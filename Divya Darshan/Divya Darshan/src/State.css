@@ -1,0 +1,77 @@
+.containerstate {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.search-box {
+  display: block;
+  margin: 20px auto 90px auto;
+  width: 50%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid orange;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .state-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .state-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-box {
+    width: 90%;
+  }
+}
+
+.state-card {
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.state-card:hover {
+  transform: scale(1.08);
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.state-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.state-card:hover .state-img {
+  transform: scale(1.0);
+  border-radius: 20px;
+}
+
+.state-name {
+  margin-top: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.state-card:hover .state-name {
+  opacity: 0;
+}

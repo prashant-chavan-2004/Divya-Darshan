@@ -1,0 +1,183 @@
+.img{
+    position: relative;
+    bottom: 40px;
+    right: 50px;
+    width: 200px;
+}
+
+.containt{
+    position: relative;
+    bottom: 210px;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+}
+
+.logo{
+    width: 390px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./assets/Temple rise.png');
+    background-position: 70% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.tagline{
+    font-size: 26px;
+    line-height: 1.3;
+    color: #555552;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(60px);
+    animation: slideUp 2s ease forwards;
+    min-height: 80px;
+}
+
+@keyframes slideUp{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container{
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.right{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo1{
+    position: relative;
+    top: 90px;
+    left: 150px;
+    width: 70%;
+    height: auto;
+}
+
+.title-box{
+    position: relative;
+    top: 170px;
+    left: 150px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.text-box{
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+    width: 100%;
+    max-width: 700px;
+}
+
+.text-box::first-letter{
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0;
+    color: #000000;
+}
+
+.cursor{
+    display: inline-block;
+    font-weight: bold;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.highlight{
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color: #434242;
+}
+
+.button{
+    position: relative;
+    bottom: 30px;
+    left: 250px;
+    border: 2px solid #ffffff;
+    border-radius: 39px;
+    padding: 9px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #a29d9d;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #fff;
+    border: 2px solid rgb(254, 121, 72);
+    color: rgb(254, 121, 72);
+}
+
+.para1{
+    position: relative;
+    bottom: 240px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.img1{
+    position: relative;
+    bottom: 220px;
+    margin: auto;
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    left: 0;
+}
+
+.img2{
+    position: relative;
+    bottom: 259px;
+    margin: auto;
+    display: block;
+    width: 600px;
+    max-width: 90%;
+    left: 0;
+    margin-bottom: -230px;
+}
+
