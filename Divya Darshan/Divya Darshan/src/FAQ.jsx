@@ -73,7 +73,6 @@ const FAQ = () => {
       {faqData.map((item, index) => (
         <div key={index} className="faq-item">
 
-          {/* Question Row */}
           <div className="faq-question" onClick={() => toggleFAQ(index)}>
             <span>{item.question}</span>
             <button className="faq-btn">
@@ -81,7 +80,6 @@ const FAQ = () => {
             </button>
           </div>
 
-          {/* Answer */}
           {activeIndex === index && (
             <div className="faq-answer">
               {item.answer}

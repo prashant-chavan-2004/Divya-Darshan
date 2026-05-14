@@ -86,9 +86,9 @@ return (
         <img src={img1} alt="img1" className="img1" />
         <h3 className="para1">Explore Temples Across India and the World</h3>
         <img src={img2} alt="img2" className="img2" />
-        <State></State>
-        <FAQ></FAQ>
-        <Footer></Footer>
+        <State/>
+        <FAQ/>
+        <Footer/>
     </div>
     </div>
 </div>

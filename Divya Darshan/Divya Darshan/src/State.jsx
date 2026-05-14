@@ -4,6 +4,7 @@ import statesData from "./statesData";
 import "./State.css";
 
 const State = () => {
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
 
   const filteredStates = statesData.filter((state) =>
@@ -22,7 +23,8 @@ const State = () => {
 
       <div className="state-grid">
         {filteredStates.map((state, index) => (
-          <div className="state-card" key={index}>
+          <div className="state-card" key={index}
+            onClick={() => navigate(`/district/${state.name.toLowerCase()}`)}>
             <div className="img-box">
               <img
                 src={state.image}

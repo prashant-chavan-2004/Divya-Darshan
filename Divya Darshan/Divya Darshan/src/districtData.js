@@ -551,44 +551,44 @@ import simg4 from "./assets/Namchi.jpg";
 import simg5 from "./assets/Pakyong.jpg";
 import simg6 from "./assets/Soreng.jpg";
 
-import taming1 from "./assets/Ariyalur.jpg";
-import taming2 from "./assets/Chengalpattu.jpg";
-import taming3 from "./assets/Chennai.jpg";
-import taming4 from "./assets/Coimbatore.jpg";
-import taming5 from "./assets/Cuddalore.jpg";
-import taming6 from "./assets/Dharmapuri.jpg";
-import taming7 from "./assets/Dindigul.jpg";
-import taming8 from "./assets/Erode.jpg";
-import taming9 from "./assets/Kallakurichi.jpg";
-import taming10 from "./assets/Kanchipuram.jpg";
-import taming11 from "./assets/Kanyakumari.jpg";
-import taming12 from "./assets/Karur.jpg";
-import taming13 from "./assets/Krishnagiri.jpg";
-import taming14 from "./assets/Madurai.jpg";
-import taming15 from "./assets/Mayiladuthurai.webp";
-import taming16 from "./assets/Nagapattinam.jpg";
-import taming17 from "./assets/Namakkal.jpg";
-import taming18 from "./assets/Nilgiris.jpg";
-import taming19 from "./assets/Perambalur.jpg";
-import taming20 from "./assets/Pudukkottai.jpg";
-import taming21 from "./assets/Ramanathapuram.jpg";
-import taming22 from "./assets/Ranipet.jpg";
-import taming23 from "./assets/Salem.jpg";
-import taming24 from "./assets/Sivaganga.jpg";
-import taming25 from "./assets/Tenkasi.jpg";
-import taming26 from "./assets/Thanjavur.jpg";
-import taming27 from "./assets/Theni.jpg";
-import taming28 from "./assets/Thoothukudi.jpg";
-import taming29 from "./assets/Tiruchirappalli.jpg";
-import taming30 from "./assets/Tirunelveli.jpg";
-import taming31 from "./assets/Tirupattur.jpg";
-import taming32 from "./assets/Tiruppur.jpg";
-import taming33 from "./assets/Tiruvallur.jpg";
-import taming34 from "./assets/Tiruvannamalai.jpg";
-import taming35 from "./assets/Tiruvarur.jpg";
-import taming36 from "./assets/Vellore.jpg";
-import taming37 from "./assets/Viluppuram.jpg";
-import taming38 from "./assets/Virudhunaga.jpg";
+import tamimg1 from "./assets/Ariyalur.jpg";
+import tamimg2 from "./assets/Chengalpattu.jpg";
+import tamimg3 from "./assets/Chennai.jpg";
+import tamimg4 from "./assets/Coimbatore.jpg";
+import tamimg5 from "./assets/Cuddalore.jpg";
+import tamimg6 from "./assets/Dharmapuri.jpg";
+import tamimg7 from "./assets/Dindigul.jpg";
+import tamimg8 from "./assets/Erode.jpg";
+import tamimg9 from "./assets/Kallakurichi.jpg";
+import tamimg10 from "./assets/Kanchipuram.jpg";
+import tamimg11 from "./assets/Kanyakumari.jpg";
+import tamimg12 from "./assets/Karur.jpg";
+import tamimg13 from "./assets/Krishnagiri.jpg";
+import tamimg14 from "./assets/Madurai.jpg";
+import tamimg15 from "./assets/Mayiladuthurai.webp";
+import tamimg16 from "./assets/Nagapattinam.jpg";
+import tamimg17 from "./assets/Namakkal.jpg";
+import tamimg18 from "./assets/Nilgiris.jpg";
+import tamimg19 from "./assets/Perambalur.jpg";
+import tamimg20 from "./assets/Pudukkottai.jpg";
+import tamimg21 from "./assets/Ramanathapuram.jpg";
+import tamimg22 from "./assets/Ranipet.jpg";
+import tamimg23 from "./assets/Salem.jpg";
+import tamimg24 from "./assets/Sivaganga.jpg";
+import tamimg25 from "./assets/Tenkasi.jpg";
+import tamimg26 from "./assets/Thanjavur.jpg";
+import tamimg27 from "./assets/Theni.jpg";
+import tamimg28 from "./assets/Thoothukudi.jpg";
+import tamimg29 from "./assets/Tiruchirappalli.jpg";
+import tamimg30 from "./assets/Tirunelveli.jpg";
+import tamimg31 from "./assets/Tirupattur.jpg";
+import tamimg32 from "./assets/Tiruppur.jpg";
+import tamimg33 from "./assets/Tiruvallur.jpg";
+import tamimg34 from "./assets/Tiruvannamalai.jpg";
+import tamimg35 from "./assets/Tiruvarur.jpg";
+import tamimg36 from "./assets/Vellore.jpg";
+import tamimg37 from "./assets/Viluppuram.jpg";
+import tamimg38 from "./assets/Virudhunaga.jpg";
 
 import telaimg1 from "./assets/Adilabad.jpg";
 import telaimg2 from "./assets/Bhadradri Kothagudem.jpg";
@@ -747,7 +747,7 @@ import wimg23 from "./assets/Uttar Dinajpur.jpg";
 
 
 const districtData = {
-  Andhra_Pradesh: [
+  andhra_pradesh: [
   {state: "Andhra Pradesh", district: "Anakapalli", image: Anakapalli,},
   {state: "Andhra Pradesh", district: "Anantapuramu", image: Anantapuramu,},
   {state: "Andhra Pradesh", district: "Annamayya", image: Annamayya,},
@@ -775,7 +775,7 @@ const districtData = {
   {state: "Andhra Pradesh", district: "YSR Kadapa", image: YSR,}
 ],
 
-  Arunachal_Pradesh: [
+ arunachal_pradesh: [
     { state: "Arunachal Pradesh", district: "Tawang", image: Tawang },
     { state: "Arunachal Pradesh", district: "West Kameng", image: Kameng },
     { state: "Arunachal Pradesh", district: "East Kameng", image: eastKameng },
@@ -806,7 +806,7 @@ const districtData = {
     { state: "Arunachal Pradesh", district: "Keyi Panyor", image: keyiPanyor },
   ],
 
-Assam : [
+assam : [
 { state: "Assam", district: "Bajali", image: img1 },
 { state: "Assam", district: "Baksa", image: img2 },
 { state: "Assam", district: "Barpeta", image: img3 },
@@ -844,7 +844,7 @@ Assam : [
 { state: "Assam", district: "West Karbi Anglong", image: img35 },
 ],
   
-  Bihar : [
+  bihar : [
 { state: "Bihar", district: "Araria", image: bimg1 },
 { state: "Bihar", district: "Arwal", image: bimg2 },
 { state: "Bihar", district: "Aurangabad", image: bimg3 },
@@ -885,11 +885,11 @@ Assam : [
 { state: "Bihar", district: "West Champaran", image: bimg38 },
 ],
 
-  Chandigarh: [
+  chandigarh: [
   { state: "Chandigarh", district: "Chandigarh", image: chandigarhImg },
 ],
 
-  Chhattisgarh: [
+  chhattisgarh: [
   { state: "Chhattisgarh", district: "Balod", image: cimg1 },
   { state: "Chhattisgarh", district: "Baloda Bazar", image: cimg2 },
   { state: "Chhattisgarh", district: "Balrampur", image: cimg3 },
@@ -926,7 +926,7 @@ Assam : [
 
 ],
 
-  Goa: [
+  goa: [
   {
     state: "Goa",
     district: "North Goa",
@@ -941,7 +941,7 @@ Assam : [
   },
 ],
 
-  Gujarat: [{ state: "Gujarat", district: "Ahmedabad", image: gimg1 }, 
+  gujarat: [{ state: "Gujarat", district: "Ahmedabad", image: gimg1 }, 
           { state: "Gujarat", district: "Amreli", image: gimg2 },
           { state: "Gujarat", district: "Anand", image: gimg3 }, 
           { state: "Gujarat", district: "Aravalli", image: gimg4 }, 
@@ -976,7 +976,7 @@ Assam : [
           { state: "Gujarat", district: "Valsad", image: gimg33 },
         ],
 
-  Haryana : [{ state: "Haryana", district: "Ambala", image: himg1 },
+  haryana : [{ state: "Haryana", district: "Ambala", image: himg1 },
             { state: "Haryana", district: "Bhiwani", image: himg2 },
             { state: "Haryana", district: "Charkhi Dadri", image: himg3 },
             { state: "Haryana", district: "Faridabad", image: himg4 },
@@ -1000,7 +1000,7 @@ Assam : [
             { state: "Haryana", district: "Yamunanagar", image: himg22 },
           ],
 
-  Himachal_pradesh : [{ state: "Himachal Pradesh", district: "Bilaspur", image: HPradesh1 },
+  himachal_pradesh : [{ state: "Himachal Pradesh", district: "Bilaspur", image: HPradesh1 },
                       { state: "Himachal Pradesh", district: "Chamba", image: HPradesh2 },
                       { state: "Himachal Pradesh", district: "Hamirpur", image: HPradesh3 },
                       { state: "Himachal Pradesh", district: "Kangra", image: HPradesh4 },
@@ -1014,7 +1014,7 @@ Assam : [
                       { state: "Himachal Pradesh", district: "Una", image: HPradesh12 },
             ],
 
-  Jharkhand : [{ state: "Jharkhand", district: "Bokaro", image: jimg1 },
+  jharkhand : [{ state: "Jharkhand", district: "Bokaro", image: jimg1 },
               { state: "Jharkhand", district: "Chatra", image: jimg2 },
               { state: "Jharkhand", district: "Deoghar", image: jimg3 },
               { state: "Jharkhand", district: "Dhanbad", image: jimg4 },
@@ -1040,7 +1040,7 @@ Assam : [
               { state: "Jharkhand", district: "West Singhbhum", image: jimg24 },
             ],
 
-  Karanataka : [{ state: "Karnataka", district: "Bagalkot", image: kimg1 },
+  karnataka : [{ state: "Karnataka", district: "Bagalkot", image: kimg1 },
                 { state: "Karnataka", district: "Ballari", image:kimg2 },
                 { state: "Karnataka", district: "Belagavi", image: kimg3 },
                 { state: "Karnataka", district: "Bengaluru Rural", image: kimg4 },
@@ -1072,7 +1072,7 @@ Assam : [
                 { state: "Karnataka", district: "Yadgir", image: kimg30 },
               ],
 
-  Kerala : [{ state: "Kerala", district: "Alappuzha", image: kiimg1 },
+  kerala : [{ state: "Kerala", district: "Alappuzha", image: kiimg1 },
             { state: "Kerala", district: "Ernakulam", image: kiimg2 },
             { state: "Kerala", district: "Idukki", image: kiimg3 },
             { state: "Kerala", district: "Kannur", image: kiimg4 },
@@ -1088,7 +1088,7 @@ Assam : [
             { state: "Kerala", district: "Wayanad", image: kiimg14 },
           ],
 
-  M_pradesh : [{ state: "M Pradesh", district: "Agar Malwa", image: MPimg1 },
+  madhys_pradesh : [{ state: "M Pradesh", district: "Agar Malwa", image: MPimg1 },
                     { state: "M Pradesh", district: "Alirajpur", image: MPimg2 },
                     { state: "M Pradesh", district: "Anuppur", image: MPimg3 },
                     { state: "M Pradesh", district: "Ashoknagar", image: MPimg4 },
@@ -1141,7 +1141,7 @@ Assam : [
                     { state: "M Pradesh", district: "Vidisha", image: MPimg51 },
                   ],
 
- Maharashtra: [{ state: "Maharashtra", district: "Ahmednagar", image: mahimg1 },
+ maharashtra: [{ state: "Maharashtra", district: "Ahmednagar", image: mahaimg1 },
               { state: "Maharashtra", district: "Akola", image: mahaimg2 },
               { state: "Maharashtra", district: "Amravati", image: mahaimg3 },
               { state: "Maharashtra", district: "Beed", image: mahaimg4 },
@@ -1179,7 +1179,7 @@ Assam : [
               { state: "Maharashtra", district: "Yavatmal", image: mahaimg36 },
             ],
 
-  Manipur: [
+  manipur: [
             { state: "Manipur", district: "Bishnupur", image: manimg1 },
             { state: "Manipur", district: "Chandel", image: manimg2 },
             { state: "Manipur", district: "Churachandpur", image: manimg3 },
@@ -1198,7 +1198,7 @@ Assam : [
             { state: "Manipur", district: "Ukhrul", image: manimg16 },
           ],
 
-Meghalaya: [
+meghalaya: [
           { state: "Meghalaya", district: "East Garo Hills", image: meghaimg1 },
           { state: "Meghalaya", district: "East Khasi Hills", image: meghaimg2},
           { state: "Meghalaya", district: "East Jaintia Hills", image: meghaimg3 },
@@ -1212,7 +1212,7 @@ Meghalaya: [
           { state: "Meghalaya", district: "West Khasi Hills", image: meghaimg11 },
         ],
 
-Mizoram: [
+mizoram: [
           { state: "Mizoram", district: "Aizawl", image: mimg1 },
           { state: "Mizoram", district: "Champhai", image: mimg2 },
           { state: "Mizoram", district: "Hnahthial", image: mimg3 },
@@ -1226,7 +1226,7 @@ Mizoram: [
           { state: "Mizoram", district: "Serchhip", image: mimg11 },
         ],
 
-Nagaland: [
+nagaland: [
           { state: "Nagaland", district: "Chümoukedima", image: nagaimg1 },
           { state: "Nagaland", district: "Dimapur", image: nagaimg2},
           { state: "Nagaland", district: "Kiphire", image: nagaimg3 },
@@ -1236,7 +1236,7 @@ Nagaland: [
           { state: "Nagaland", district: "Mon", image: nagaimg7 },
           { state: "Nagaland", district: "Niuland", image: nagaimg8 },
           { state: "Nagaland", district: "Noklak", image: nagaimg9 },
-          { state: "Nagaland", district: "Peren", image: nagalimg10 },
+          { state: "Nagaland", district: "Peren", image: nagaimg10 },
           { state: "Nagaland", district: "Phek", image: nagaimg11 },
           { state: "Nagaland", district: "Shamator", image: nagaimg12 },
           { state: "Nagaland", district: "Tuensang", image: nagaimg13 },
@@ -1245,7 +1245,7 @@ Nagaland: [
           { state: "Nagaland", district: "Zunheboto", image: nagaimg16 },
         ],
 
-Odisha: [
+odisha: [
         { state: "Odisha", district: "Angul", image: odimg1 },
         { state: "Odisha", district: "Balangir", image: odimg2 },
         { state: "Odisha", district: "Balasore", image: odimg3 },
@@ -1278,7 +1278,7 @@ Odisha: [
         { state: "Odisha", district: "Sundargarh", image: odimg30 },
       ],
 
-Punjab: [
+punjab: [
         { state: "Punjab", district: "Amritsar", image: punimg1 },
         { state: "Punjab", district: "Barnala", image: punimg2 },
         { state: "Punjab", district: "Bathinda", image: punimg3 },
@@ -1304,7 +1304,7 @@ Punjab: [
         { state: "Punjab", district: "Tarn Taran", image: punimg23 },
       ],
 
-  Rajasthan: [
+  rajasthan: [
             { state: "Rajasthan", district: "Ajmer", image: rajimg1 },
             { state: "Rajasthan", district: "Alwar", image: rajimg2 },
             { state: "Rajasthan", district: "Banswara", image: rajimg3 },
@@ -1320,7 +1320,7 @@ Punjab: [
             { state: "Rajasthan", district: "Dholpur", image: rajimg13 },
             { state: "Rajasthan", district: "Dungarpur", image: rajimg14 },
             { state: "Rajasthan", district: "Hanumangarh", image: rajimg15 },
-            { state: "Rajasthan", district: "Jaipur", image: rajasthanImg16},
+            { state: "Rajasthan", district: "Jaipur", image: rajimg16},
             { state: "Rajasthan", district: "Jaisalmer", image: rajimg17 },
             { state: "Rajasthan", district: "Jalore", image: rajimg18 },
             { state: "Rajasthan", district: "Jhalawar", image: rajimg19 },
@@ -1340,7 +1340,7 @@ Punjab: [
             { state: "Rajasthan", district: "Udaipur", image: rajimg33 },
           ],
 
-Sikkim: [
+sikkim: [
         { state: "Sikkim", district: "Gangtok", image: simg1 },
         { state: "Sikkim", district: "Gyalshing", image: simg2 },
         { state: "Sikkim", district: "Mangan", image: simg3 },
@@ -1349,7 +1349,7 @@ Sikkim: [
         { state: "Sikkim", district: "Soreng", image: simg6 },
       ],
 
-Tamil_nadu: [
+tamil_nadu: [
   { state: "Tamil Nadu", district: "Ariyalur", image: tamimg1 },
   { state: "Tamil Nadu", district: "Chengalpattu", image: tamimg2 },
   { state: "Tamil Nadu", district: "Chennai", image: tamimg3 },
@@ -1390,7 +1390,7 @@ Tamil_nadu: [
   { state: "Tamil Nadu", district: "Virudhunagar", image: tamimg38 },
 ],
 
-Telangana: [
+telangana: [
             { state: "Telangana", district: "Adilabad", image: telaimg1 },
             { state: "Telangana", district: "Bhadradri Kothagudem", image: telaimg2 },
             { state: "Telangana", district: "Hyderabad", image: telaimg3 },
@@ -1426,7 +1426,7 @@ Telangana: [
             { state: "Telangana", district: "Yadadri Bhuvanagiri", image: telaimg33 },
           ],
 
-Tripur: [
+tripura: [
         { state: "Tripura", district: "Dhalai", image: trimg1 },
         { state: "Tripura", district: "Gomati", image: trimg2 },
         { state: "Tripura", district: "Khowai", image: trimg3 },
@@ -1437,7 +1437,7 @@ Tripur: [
         { state: "Tripura", district: "West Tripura", image: trimg8 },
       ],
 
-Uttar_pradesh: [
+uttar_pradesh: [
             { state: "Uttar Pradesh", district: "Agra", image: upImg1 },
             { state: "Uttar Pradesh", district: "Aligarh", image: upImg2 },
             { state: "Uttar Pradesh", district: "Prayagraj", image: upImg3 },
@@ -1513,7 +1513,7 @@ Uttar_pradesh: [
             { state: "Uttar Pradesh", district: "Varanasi", image: upImg73 },
           ],
 
-Uttarakhand: [
+uttarakhand: [
             { state: "Uttarakhand", district: "Almora", image: uttaraimg1 },
             { state: "Uttarakhand", district: "Bageshwar", image: uttaraimg2 },
             { state: "Uttarakhand", district: "Chamoli", image: uttaraimg3 },
@@ -1529,7 +1529,7 @@ Uttarakhand: [
             { state: "Uttarakhand", district: "Uttarkashi", image: uttaraimg13 },
           ],
 
-West_bengal: [
+west_bengal: [
             { state: "West Bengal", district: "Alipurduar", image: wimg1 },
             { state: "West Bengal", district: "Bankura", image: wimg2 },
             { state: "West Bengal", district: "Birbhum", image: wimg3 },

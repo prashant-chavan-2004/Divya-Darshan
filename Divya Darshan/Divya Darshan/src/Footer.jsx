@@ -7,10 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-
       <div className="footer-container">
-
-        {/* LEFT - About Website */}
         <div className="footer-section">
           <h3>Divya Darshan</h3>
           <p>
@@ -20,7 +17,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* MIDDLE - About Us (Toggle) */}
         <div className="footer-section">
           <h4 onClick={() => setShowAbout(!showAbout)} className="clickable">
             About Us
@@ -36,7 +32,6 @@ const Footer = () => {
           )}
         </div>
 
-        {/* RIGHT - Navigation */}
         <div className="footer-section">
           <h4>Explore</h4>
           <ul>
@@ -68,9 +63,6 @@ const Footer = () => {
 
       </div>
 
-      
-
-      {/* DISCLAIMER */}
       <div className="footer-disclaimer">
         <p>
           All temple images and information are collected from Google verified sources.
@@ -78,13 +70,11 @@ const Footer = () => {
         </p>
       </div>
 
-      {/* COPYRIGHT */}
       <div className="footer-bottom">
         <p>
           © {new Date().getFullYear()} Divya_Darshan — Darshan. Devotion. Discovery
         </p>
       </div>
-
     </footer>
   );
 };
