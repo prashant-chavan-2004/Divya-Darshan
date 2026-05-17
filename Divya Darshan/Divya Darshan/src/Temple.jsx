@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
-import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 import { useParams } from "react-router-dom";
 import "./Temple.css";
@@ -12,23 +11,29 @@ const Temple = () => {
   const [temples, setTemples] = useState([]);
   const [selectedTemple, setSelectedTemple] = useState(null);
 
-  // ✅ FIX: popup ref
   const popupRef = useRef(null);
 
-  useEffect(() => {
-    axios.get(`http://localhost:5000/api/temples/${districtName}`)
-      .then((res) => {
-        setTemples(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, [districtName]);
+useEffect(() => {
+  const url = `${import.meta.env.VITE_API_URL}/api/temples/${districtName}`;
+  console.log("Fetching:", url);
+  console.log("districtName:", districtName);
+
+  axios.get(url)
+    .then((res) => {
+      console.log("Status:", res.status);
+      console.log("Data:", res.data);
+      console.log("Is array:", Array.isArray(res.data));
+      setTemples(res.data);
+    })
+    .catch((err) => {
+      console.log("Error status:", err.response?.status);
+      console.log("Error message:", err.response?.data);
+    });
+}, [districtName]);
 
   return (
     <div className="temple-page">
 
-      {/* BACK BUTTON */}
       <button
         className="back-button"
         onClick={() => window.history.back()}
@@ -36,31 +41,30 @@ const Temple = () => {
         ⬅ Back
       </button>
 
-      {/* TITLE */}
       <h1 className="district-title">
         {districtName} Temples
       </h1>
 
-      {/* TEMPLE GRID */}
       <div className="district-container">
 
-        {temples.map((temple, index) => (
-          <div
-            key={index}
-            className="district-card"
-            onClick={() => setSelectedTemple(temple)}
-          >
-            <img
-              src={temple.templeImage}
-              alt={temple.templeName}
-              className="temple-image"
-            />
+       {Array.isArray(temples) &&
+  temples.map((temple, index) => (
+    <div
+      key={index}
+      className="district-card"
+      onClick={() => setSelectedTemple(temple)}
+    >
+      <img
+        src={temple.templeImage}
+        alt={temple.templeName}
+        className="temple-image"
+      />
 
-            <h2 className="district-name">
-              {temple.templeName}
-            </h2>
-          </div>
-        ))}
+      <h2 className="district-name">
+        {temple.templeName}
+      </h2>
+    </div>
+  ))}
       </div>
 
       {/* POPUP */}
@@ -123,13 +127,10 @@ const Temple = () => {
               >
                 Hotel Find With Google
               </a>
-
             </div>
-
           </div>
         </div>
       )}
-
     </div>
   );
 };

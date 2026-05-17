@@ -294,7 +294,7 @@
   }
 }
 
-/* HOTEL BUTTON */
+
 .hotel-btn {
   display: inline-block;
   text-decoration: none;
@@ -309,12 +309,9 @@
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(255,255,255,0.2);
-
-  /* SAME SIZE */
   width: 180px;
 }
 
-/* MAP BUTTON */
 .map-btn {
   display: inline-block;
   text-decoration: none;
@@ -329,12 +326,9 @@
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(255,255,255,0.2);
-
-  /* SAME SIZE */
   width: 180px;
 }
 
-/* SAME HOVER EFFECT */
 .hotel-btn:hover,
 .map-btn:hover {
   background: rgba(0, 0, 0, 0.85);
@@ -356,8 +350,6 @@
   font-size: 28px;
   font-weight: bold;
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -452,4 +444,53 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 9999;
+}
+
+@media (max-width: 600px) {
+
+  .temple-page {
+    padding: 15px;
+  }
+
+  .district-title {
+    font-size: 24px;
+  }
+
+  .temple-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .temple-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+  }
+
+  .popup-box {
+    width: 95%;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .popup-image {
+    width: 100%;
+    height: 160px;
+  }
+
+  .popup-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .map-btn,
+  .hotel-btn {
+    width: 100%;
+  }
+
+  .close-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
 }

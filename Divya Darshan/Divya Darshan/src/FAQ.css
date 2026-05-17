@@ -63,31 +63,27 @@
 
   .faq-container {
     width: 95%;
-    margin: 80px auto 20px auto;
+    margin: 60px auto 20px auto;
   }
 
   .faq-title {
-    font-size: 22px;
-    margin-bottom: 30px;
-  }
-
-  .faq-item {
-    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
   }
 
   .faq-question {
-    padding: 12px;
     font-size: 14px;
-    border-radius: 20px;
-  }
-
-  .faq-btn {
-    font-size: 18px;
+    padding: 10px;
+    border-radius: 15px;
   }
 
   .faq-answer {
-    padding: 12px;
     font-size: 13px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .faq-btn {
+    font-size: 16px;
   }
 }
