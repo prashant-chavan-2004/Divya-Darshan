@@ -1,57 +1,74 @@
 import React, { useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom"; // Add useNavigate
+import { useParams, useNavigate } from "react-router-dom";
 import districtData from "./districtData";
 import "./DistrictPage.css";
+import temple from "./Temple";
 
 const DistrictPage = () => {
+
   const { stateName } = useParams();
-  const navigate = useNavigate(); // Add this
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const districts = districtData[decodeURIComponent(stateName)] || [];
+  const stateKey = stateName
+    .toLowerCase()
+    .replace(/\s+/g, "_");
+
+  const districts =
+    districtData[stateKey] || [];
 
   return (
     <div className="district-page">
-      {/* BACK BUTTON - OPTIONAL */}
-      <button 
+
+      {/* Back Button */}
+      <button
         className="back-button"
-        onClick={() => navigate('/states')}
-        style={{
-          marginBottom: '1rem',
-          padding: '0.5rem 1rem',
-          background: '#007bff',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}
+        onClick={() => navigate("/states")}
       >
-        ← Back to States
+        ⬅ Back to States
       </button>
 
-      {/* STATE TITLE */}
+      {/* State Title */}
       <h1 className="district-title">
-        {decodeURIComponent(stateName)}
+        {stateName}
       </h1>
 
-      {/* REST OF YOUR CODE REMAINS SAME */}
+      {/* District Cards */}
       <div className="district-container">
+
         {districts.map((item, index) => (
-          <div key={index} className="district-card">
+          <div
+            key={index}
+            className="district-card"
+
+            onClick={() =>
+              navigate(
+                `/temple/${stateName}/${item.district}`
+              )
+            }
+          >
+
+            {/* District Image */}
             <img
               src={item.image}
-              alt={item.temple}
+              alt={item.district}
               className="district-img"
             />
-            <h3 className="state-name">{item.state}</h3>
-            <h2 className="district-name">{item.district}</h2>
-            <p className="temple-name">{item.temple}</p>
+
+            {/* District Name */}
+            <h2 className="district-name">
+              {item.district}
+            </h2>
+
           </div>
         ))}
+
       </div>
+
     </div>
   );
 };
