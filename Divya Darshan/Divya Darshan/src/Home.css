@@ -181,3 +181,89 @@ body{
     margin-bottom: -230px;
 }
 
+@media (max-width: 600px) {
+
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .img {
+    width: 120px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .containt {
+    bottom: 0;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .header {
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 220px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    padding: 20px;
+  }
+
+  .right {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .logo1 {
+    position: static;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .title-box {
+    position: static;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .text-box {
+    position: static;
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .button {
+    position: static;
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .para1 {
+    bottom: 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .img1,
+  .img2 {
+    bottom: 0;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+}

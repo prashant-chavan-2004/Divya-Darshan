@@ -75,3 +75,40 @@
 .state-card:hover .state-name {
   opacity: 0;
 }
+
+@media (max-width: 600px) {
+
+  .containerstate {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+    margin: 15px auto 40px auto;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .state-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .state-card {
+    transition: 0.3s ease;
+  }
+
+  .state-card:hover {
+    transform: scale(1.03);
+  }
+
+  .state-img {
+    height: 140px;
+    border-radius: 20px;
+  }
+
+  .state-name {
+    font-size: 14px;
+  }
+}

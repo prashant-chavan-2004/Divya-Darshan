@@ -78,7 +78,13 @@ return (
             and reliable details, helping you experience the divine essence of
             every destination with ease and devotion <span className="cursor">_</span></span>
         </p>
-        <button className="button">+ Add Temple</button>
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeB4z9aab2X89EWLbebq6WLG9a8bwKzfdIx-RAZuMhS0vj7Ow/viewform"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <button className="button">+ Add Temple</button>
+        </a>
     </div>
     </div>
 

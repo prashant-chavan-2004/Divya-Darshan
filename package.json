@@ -1,0 +1,31 @@
+{
+  "name": "divya-darshan",
+  "version": "1.0.0",
+  "description": "Website they are show the all over india temple and they information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashant-chavan-2004/Divya-Darshan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/prashant-chavan-2004/Divya-Darshan/issues"
+  },
+  "homepage": "https://github.com/prashant-chavan-2004/Divya-Darshan#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "mongoose": "^9.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
