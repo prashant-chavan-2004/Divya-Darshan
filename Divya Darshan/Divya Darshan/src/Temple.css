@@ -194,24 +194,7 @@
   display: none;
 }
 
-.popup-box::after {
-  content: "";
-  position: absolute;
-  top: 10%;
-  right: 8px;
-  width: 3px;
-  height: 80%;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(0,0,0,0.2),
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.2),
-    transparent
-  );
-  border-radius: 10px;
-  animation: lineGlow 2s infinite alternate;
-}
+
 
 @keyframes lineGlow {
   0% {
@@ -432,8 +415,8 @@
   );
   
   /* Blur Effect */
-  -webkit-backdrop-filter: blur(25px);
-  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(38px);
+  backdrop-filter: blur(38px);
   
   /* Z-Index - ensure it's highest */
   z-index: 999999;
