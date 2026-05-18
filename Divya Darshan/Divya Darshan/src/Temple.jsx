@@ -131,6 +131,17 @@ useEffect(() => {
           </div>
         </div>
       )}
+      <div className="add-temple-wrapper">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSeB4z9aab2X89EWLbebq6WLG9a8bwKzfdIx-RAZuMhS0vj7Ow/viewform"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <button className="add-temple-btn">
+      + Add Temple
+    </button>
+  </a>
+</div>
     </div>
   );
 };
