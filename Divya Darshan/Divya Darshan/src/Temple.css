@@ -429,12 +429,24 @@
   position: fixed;
   inset: 0;
 
-  background: rgba(10,10,10,0.30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  backdrop-filter: blur(30px) brightness(1.1);
-  -webkit-backdrop-filter: blur(30px) brightness(1.1);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(104,136,207,0.25),
+      rgba(255,255,255,0.15),
+      rgba(0,0,0,0.35)
+    );
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
 
   z-index: 999999;
+
+  isolation: isolate;
 }
 
 @media (max-width: 600px) {
