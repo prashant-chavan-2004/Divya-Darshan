@@ -1,6 +1,4 @@
-body{
-  overflow-x: hidden;
-}
+
 
 .temple-page {
   min-height: 100vh;
@@ -429,28 +427,65 @@ body{
   flex-wrap: wrap;
 }
 
+/*this code get form black box ai*/
 .popup-overlay {
   position: fixed;
   inset: 0;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(104,136,207,0.25),
-      rgba(255,255,255,0.15),
-      rgba(0,0,0,0.35)
-    );
-
-  backdrop-filter: blur(25px);
+  
+  /* Gradient Background */
+  background: linear-gradient(
+    135deg,
+    rgba(104, 136, 207, 0.25),
+    rgba(255, 255, 255, 0.15),
+    rgba(0, 0, 0, 0.35)
+  );
+  
+  /* Blur Effect */
   -webkit-backdrop-filter: blur(25px);
-
+  backdrop-filter: blur(25px);
+  
+  /* Z-Index - ensure it's highest */
   z-index: 999999;
-
+  
+  /* Create new stacking context */
   isolation: isolate;
+  
+  /* Prevent scrolling behind overlay */
+  overflow: hidden;
+  
+  /* Optional: animation */
+  animation: fadeIn 0.3s ease-out;
+}
+
+.popup-overlay.online {
+  /* Force the same styles when online - use !important if needed */
+  -webkit-backdrop-filter: blur(25px) !important;
+  backdrop-filter: blur(25px) !important;
+}
+
+/* Fallback for browsers that don't support backdrop-filter */
+@supports not ((-webkit-backdrop-filter: blur(25px)) or (backdrop-filter: blur(25px))) {
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .popup-overlay.online {
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+}
+
+/* Optional fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {
