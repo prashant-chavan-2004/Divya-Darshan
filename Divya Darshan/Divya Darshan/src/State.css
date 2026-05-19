@@ -85,10 +85,14 @@
   .search-box {
     width: 100%;
     font-size: 14px;
+    position : relative;
+    top: 230px;
   }
 
   .state-grid {
-    grid-template-columns: 1fr;
+    position : relative;
+    top: 200px;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 

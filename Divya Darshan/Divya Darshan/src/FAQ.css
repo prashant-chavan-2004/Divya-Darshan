@@ -64,6 +64,8 @@
   .faq-container {
     width: 95%;
     margin: 60px auto 20px auto;
+    position: relative;
+    top :190px;
   }
 
   .faq-title {
