@@ -243,17 +243,19 @@ body{
     position: static;
     margin-top: 10px;
     font-size: 14px;
+    
   }
 
   .img1{
     width: 95%;
     bottom: 3px;
-    
+    left:10px;
   }
+
   .img2 {
     width: 95%;
     bottom: 0px;
-    
+    left:10px;
   }
 
   .img{
@@ -269,6 +271,7 @@ body{
     top : 1px;
     text-align: center;
     padding-left: 0;
+    left:8px;
 }
 
 .button{
