@@ -557,9 +557,9 @@
 
 @media (max-width: 789px) {
   .add-temple-btn {
-    position : relative;
+    position : fixed;
     right:124px;
-    top:750px;
+    top:769px;
     width: 110px;
     height: 40px;
     font-size: 10px;
