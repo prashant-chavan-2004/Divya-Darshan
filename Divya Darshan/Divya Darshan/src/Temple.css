@@ -558,12 +558,13 @@
 @media (max-width: 789px) {
   .add-temple-btn {
     position : relative;
-    right:115px;
+    right:124px;
     top:750px;
     width: 110px;
     height: 40px;
     font-size: 10px;
     padding: 8px 16px;
+    border-radius: 70px;
   }
 
   .temple-page {
