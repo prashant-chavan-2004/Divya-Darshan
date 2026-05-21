@@ -1,3 +1,83 @@
+
+.add-temple-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  z-index: 1000;
+}
+
+.add-temple-btn {
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+
+  width: 150px;
+  height: 45px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.add-temple-btn:hover {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 80px;
+  box-shadow: 0 6px 20px rgba(196, 62, 194, 0.25);
+  background: #000;
+  border : 2px solid rgba(255, 0, 242, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .temple-page {
   min-height: 100vh;
   padding: 30px;
@@ -118,6 +198,20 @@
     0 0 20px rgba(255,255,255,0.2);
 }
 
+.temple-name{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 1;
+    color:#000;
+    transition: 0.3s ease;
+}
+
+.district-card:hover .temple-name{
+    transform: translateY(0);
+    opacity: 0;
+}
+
 .back-btn::before {
   content: "";
   position: absolute;
@@ -191,8 +285,6 @@
 .popup-box::-webkit-scrollbar {
   display: none;
 }
-
-
 
 @keyframes lineGlow {
   0% {
@@ -327,6 +419,12 @@
     padding: 15px;
   }
 
+  .temple-name{
+    font-size: 15px;
+    color:#000;
+    text-align: center;
+  }
+
   .district-title {
     font-size: 26px;
     margin-bottom: 30px;
@@ -384,6 +482,7 @@
     font-size: 14px;
     text-align: center;
   }
+
 }
 
 .popup-buttons {
@@ -457,6 +556,15 @@
 }
 
 @media (max-width: 789px) {
+  .add-temple-btn {
+    position : relative;
+    right:115px;
+    top:750px;
+    width: 110px;
+    height: 40px;
+    font-size: 10px;
+    padding: 8px 16px;
+  }
 
   .temple-page {
     padding: 15px;
@@ -504,48 +612,9 @@
     font-size: 14px;
   }
   
-   .district-container {
+  .district-container {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
   
-}
-
-.add-temple-wrapper {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-
-  z-index: 1000;
-}
-
-.add-temple-btn {
-  padding: 10px 20px;
-  font-size: 13px;
-  font-weight: bold;
-  color: white;
-
-  width: 150px;
-  height: 45px;
-
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 14px;
-
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.add-temple-btn:hover {
-  transform: scale(1.08);
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 80px;
-  box-shadow: 0 6px 20px rgba(196, 62, 194, 0.25);
-  background: #000;
-  border : 2px solid rgba(255, 0, 242, 0.8);
 }

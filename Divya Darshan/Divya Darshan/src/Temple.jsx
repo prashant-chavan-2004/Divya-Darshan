@@ -60,7 +60,7 @@ useEffect(() => {
         className="temple-image"
       />
 
-      <h2 className="district-name">
+      <h2 className="temple-name">
         {temple.templeName}
       </h2>
     </div>
