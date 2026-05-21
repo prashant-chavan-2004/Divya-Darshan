@@ -99,7 +99,7 @@ useEffect(() => {
               {selectedTemple.ritualsFestival}
             </p>
 
-            <p><b>Darshan Time:</b> {selectedTemple.darshanTiming}</p>
+            <p><b>Darshan Time:</b><br /><br /> {selectedTemple.darshanTiming}</p>
             <p><b>Pooja Time:</b> {selectedTemple.poojaTiming}</p>
             <p><b>Dress Code:</b> {selectedTemple.dressCodeRules}</p>
 

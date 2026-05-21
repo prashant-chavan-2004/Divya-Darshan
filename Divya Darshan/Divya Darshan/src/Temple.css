@@ -38,46 +38,6 @@
   border : 2px solid rgba(255, 0, 242, 0.8);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .temple-page {
   min-height: 100vh;
   padding: 30px;
@@ -587,13 +547,13 @@
   }
 
   .popup-box {
-    width: 95%;
+    width: 90%;
     padding: 15px;
     border-radius: 20px;
   }
 
   .popup-image {
-    width: 100%;
+    width: 90%;
     height: 160px;
   }
 
@@ -618,4 +578,61 @@
     gap: 10px;
   }
   
+}
+
+@media (max-width: 768px) {
+
+  .hotel-btn,
+  .map-btn {
+
+    width: 80%;
+
+    padding: 10px 14px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    border-radius: 35px;
+
+    text-align: center;
+
+    display: block;
+
+    margin-top: 10px;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow:
+      0 3px 10px rgba(255,255,255,0.15);
+
+    transition: all 0.3s ease;
+  }
+
+  .hotel-btn:hover,
+  .map-btn:hover {
+
+    transform: translateY(-3px) scale(1.02);
+
+    background: rgba(0,0,0,0.9);
+
+    color: white;
+
+    border-color: rgba(255,255,255,0.7);
+
+    box-shadow:
+      0 0 12px rgba(3,3,3,0.6),
+      0 0 20px rgba(205,25,199,0.4);
+  }
+
+  .popup-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 100%;
+  }
 }
